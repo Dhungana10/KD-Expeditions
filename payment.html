@@ -1,16 +1,18 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
     <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="all.js"></script>
+      <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <link rel="scriptsheet" type="new/script" href="new.script" media="all">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
@@ -18,7 +20,7 @@
         <div class="container">
             <div class="row w100">
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12 ">
-                    <h3><img src="img/logo.png">Prashu Expeditions Nepal</h3>
+                    <h3><img class="logo" src="img/logo.png"></h3>
                 </div>
 
                 <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="  font-size:15px;">
@@ -57,8 +59,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#destination">Destination</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trek.html">Trekking</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#trekking">Trekking<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#gallery">Gallery</a>
@@ -66,51 +68,96 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact">Contact Us</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="About Us.html">About Us<span class="sr-only">(current)</span></a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section>
+
+  <section>
         <div class="row justify-content-center" style="padding-top: 20px;">
             <div class="col-lg-8 text-center">
-                <h2 class="mt-0">About Us</h2>
+                <h2 class="mt-0">Book Now</h2>
                 <hr class="divider my-4">
 
-       
- <p>We are a trekking agency based in Kathmandu and we let our clients experience the local culture of different places of Nepal.
-          We make sure that our clients are comfortable in all possible manners, we takes care of everything during our leadership and always ready to help on anything that’s possible out there.</p>
+<fieldset style="background-color: white">
 
+    <form style="text-align:left">
 
+        <h2>Basic Information</h2>    <br>
+        
+        First Name: <input type="text" placeholder="Kshitiz" required> &nbsp;  Last Name: <input type="text" placeholder="Dhungana" required><br><br>
+   
+        Destination: <input type="text" id="trekking" required>&nbsp; Trekking: <input type="text" id="trekking" required><br><br>
 
- <div class="row">
-  <div class="column">
-    <img src="https://nepalexcursiontreks.com/image_upload/en/nepalese-cuisine1/large/porter-carrying-goods-nepal-excursion-treks.jpg" alt="Snow"  style="width:100% ; height:250px" class="rounded-circle">
-  </div>
-  <div class="column">
-    <img src="https://www.trekking-in-nepal.net/website/var/tmp/image-thumbnails/0/4816/thumb__auto_7e7e0dad23d3cca166d67825e3368bc6/Everest-Panorama-Trek-for-families.JPG.jpeg"  class="rounded-circle" alt="Forest"  style="width:100% ; height:250px">
-  </div>
-  <div class="column">
-    <img src="https://www.communitytrek.com/wp-content/uploads/2016/05/women-trekking-guide-nepal.jpg" alt="Mountains"  class="rounded-circle" style="width:100% ; height:250px">
-  </div>
-</div>
+        Email Address: <input type="email" id="emailid" placeholder="kd@gmail.com" required> <br></br>
+        
+        Country: <input type="text" placeholder="Nepal"><br><br>
+        
+        <input type="Submit" value="Submit">
+        
+        <br><br>
+        <hr>
+        
+        <h2>Payment</h2><br>
+        
+        Accepted Cards
+        <br>
+         <input type="radio" name="card" checked>
+        <i class="fa fa-cc-visa fa-2x" style="color: navy;"></i>
+        <input type="radio" name="card">
+        <i class="fa fa-cc-amex fa-2x" style="color: blue;"></i>
+        <input type="radio" name="card">
+        <i class="fa fa-cc-mastercard fa-2x" style="color:red;"></i>
+        <input type="radio" name="card">
+        <i class="fa fa-cc-discover fa-2x" style="color:orange;"></i>
+        <br><br>
+        
+        Name on Card<br>
+        <input type="text" placeholder="Kshitiz Dhungana"><br><br>
+        Credit Card Number<br>
+        <input type="text" placeholder="1111-2222-3333-4444" requiredmaxlength="19"><br><br>
+        Expiry Month<br>
+        <label for="Expiry Month">
+           <select>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+           </select><br><br>
+        
+           <label>
+            <input type="checkbox" checked="checked" required>
+            I agree all the terms and conditions
+           </label><br><br>
 
-<blockquote class="wp-block-quote"><p>The world is a book and those who do not travel read only one page.  </p><cite>Agustine of Hippo</cite></blockquote>
-<blockquote class="wp-block-quote"><p>All journeys have secret destinations of which the traveler is unaware.  </p><cite>Martin Buber</cite></blockquote>
-
-
-    </section>
-
-
-
-
-
-<br>
-
+           <input type="submit" value="Sign Up" class="btna" >  
     
+        </form>
+</fieldset>
+
+
+
+                </div>
+                </div>
+                </section>
+
+
+
+
+
+      
     <!-- Footer -->
     <footer class=" text-center text-white " style="background-color: #162e44; font-size: 17px; ">
         
@@ -168,7 +215,7 @@
 
                         <address>
                             <b>Visit us at:</b><br>
-                            prashuexpeditionsnepal@gmail.com<br>
+                            kdexpeditionsnepal@gmail.com<br>
                             P.O.BOX: 0000, Thamel, Kanchan Marg,<br>
                             Nepal
                             </address>
@@ -202,11 +249,14 @@
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2021 |
-            <a class="text-white" href="https://mdbootstrap.com/">Prashuna Pokhrel | Created By Prashuna Pokhrel</a>
+            <a class="text-white" href="https://mdbootstrap.com/">Kshitiz Dhungana | Created By Kshitiz Dhungana</a>
         </div>
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
